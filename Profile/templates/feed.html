@@ -172,7 +172,7 @@
           <p>
             This is a store with various sections, in each section we use Django features like forms, classes, the Django ORM with other technologies such as HTML, CSS3 and Bootstrap 
           </p>
-          <button class="button" style="vertical-align:middle"><span>Read more...</span></button>
+          <button class="button" style="vertical-align:middle"><a href="https://github.com/aldomatus/online_store"><span>Read more...</span></a></button>
         </div>
 
         <div class="project-2">
@@ -181,9 +181,9 @@
           </div>
             <img src="https://i.imgur.com/tQs18M2.png" alt="portfolio">
             <p>
-              This project has a sign up system that works with Django's ORM. Also, it functions with a log in and log out system for students' databases and allows emails.  
+              Portfolio project works with templates and view functions, has a email system and several CSS3 functions
             </p>
-            <button class="button" style="vertical-align:middle"><span>Read more...</span></button>
+            <button class="button" style="vertical-align:middle"><a href="https://github.com/aldomatus/portfolio"><span>Read more...</span></a></button>
         </div> 
         
         <div class="project-3">
@@ -191,32 +191,93 @@
             <h2>University administrator 🧑‍🎓</h2>
           </div>
           <img src="https://i.imgur.com/tGSpi9O.png" alt="University">
-          <p>Portfolio project works with templates and view functions, has a email system and several CSS3 functions</p>
-          <button class="button" style="vertical-align:middle"><span>Read more...</span></button>
+          <p>This project has a sign up system that works with Django's ORM. Also, it functions with a log in and log out system for students' databases and allows emails.  </p>
+          <button class="button" style="vertical-align:middle"><a href="https://github.com/aldomatus/university_project"><span>Read more...</span></a></button>
       </div>
     </section>
-    
-        <div class="project-4">
-          <h1>Social Media <span style='font-size:50px;'>❤️</span></h1>
-          
-          <div class="slider-container">
-            <div class="menu">
-              <label for="slide-dot-1"></label>
-              <label for="slide-dot-2"></label>
-              <label for="slide-dot-3"></label>
-            </div>
-            
-            <input id="slide-dot-1" type="radio" name="slides" checked>
-              <div class="slide slide-1"></div>
-            
-            <input id="slide-dot-2" type="radio" name="slides">
-              <div class="slide slide-2"></div>
-            
-            <input id="slide-dot-3" type="radio" name="slides">
-              <div class="slide slide-3"></div>
+
+<!--SLIDER-->
+<div class="project-4">
+
+        <div class="w3-container">
+          <h2>Matusgram ❤️ </h2>
+          <h3>Django's features used<span style='font-size:50px;'>🛠️</span></h3>
+        <div class="w3-content w3-display-container">
+        
+        <div class="w3-display-container mySlides">
+          <img src="https://i.imgur.com/ZDsaHUe.png" style="width:100%">
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Customize your profile
           </div>
-          <h2>Django's features used<span style='font-size:50px;'>🛠️</span></h2>
-          <div class="list">
+        </div>
+        
+        <div class="w3-display-container mySlides">
+          <img src="https://i.imgur.com/fglyRM9.png" style="width:100%">
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Sign up system
+          </div>
+        </div>
+        
+        <div class="w3-display-container mySlides">
+          <img src="https://i.imgur.com/W9twN6c.png" style="width:100%">
+          <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+            Login system
+          </div>
+        </div>
+        
+        <div class="w3-display-container mySlides">
+          <img src="https://i.imgur.com/DVQA6Mc.png" style="width:100%">
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Edit your profile
+          </div>
+        </div>
+        
+        <div class="w3-display-container mySlides">
+          <img src="https://i.imgur.com/70X1lvr.png" style="width:100%">
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Post your photos
+          </div>
+        </div>
+
+        <div class="w3-display-container mySlides">
+          <img src="https://i.imgur.com/w62X3lh.png" style="width:100%">
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Visit other profiles 
+          </div>
+        </div>
+
+        <div class="w3-display-container mySlides">
+          <img src="https://i.imgur.com/Q4MO80t.png" style="width:100%">
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Feed of the latest publications
+          </div>
+        </div>
+        
+        <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+        
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+         <div class="list" style="font-size: 2rem;">
               <ul>
                 <li>Django's Class-based views</li>
                 <li>Djang’s ORM</li>
@@ -226,10 +287,10 @@
                 <li>Django's administrator</li> 
               </ul>
           </div>
-          <p><span style='font-size:50px;'>📷</span> This project pretends to be the instagram social network.
+          <p style="font-size: 3rem;"><span style='font-size:50px;'>📷</span> This project pretends to be the instagram social network.<br>
             Features:
             </p>
-          <div class="list">
+          <div class="list" style="font-size: 2rem;">
             <ul>
               <li>Signup</li>
               <li>Login</li>
@@ -238,9 +299,6 @@
               <li>Profile edit </li> 
             </ul>
         </div>
-
-
         </div>
-
-
+</div>
     {% endblock %}

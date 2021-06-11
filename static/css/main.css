@@ -340,7 +340,7 @@ p {
 }
 
 .footer {
-   background-color: rgba(24, 64, 8, 0.8);
+   background-color: rgba(0, 81, 128, 0.8);
 }
 
 .btn {
@@ -453,8 +453,12 @@ ul.errorlist{
   display: inline-block;
   position: relative;
   transition: 0.5s;
+  color: white;
 }
 
+.button .span a{
+  color: white;
+}
 .button span:after {
   content: '\00bb';
   position: absolute;
@@ -556,9 +560,14 @@ ul.errorlist{
 }
 .project-4 h2{
   margin-top: 2rem;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.project-4 h3{
+  margin-top: 2rem;
   font-size: 3rem;
   text-align: center;
-  background-color: rgb(51, 51, 255, 0.55)
 }
 .project-4 ul{
     list-style-type:disc;
@@ -567,74 +576,9 @@ ul.errorlist{
 
 
 .project-4 .list{
-  margin-left: 4rem;
+  margin-left: 7rem;
 }
 
-.slider-container{
-  height: 700px;
-  width: auto;
-  position: relative;
-  overflow: hidden; 
-  text-align: center;
-}
-
-.menu {
-  position: absolute;
-  left: 0;
-  z-index: 900;
-  width: 100%;
-  bottom: 0;
-}
-
-.menu label {
-  cursor: pointer;
-  display: inline-block;
-  width: 4rem;
-  height: 4rem;
-  background: #fff;
-  border-style: solid;
-  border-color: #999;
-  border-radius: 50px;
-  margin: 0 .2em 1em;
-}
-
-.slide {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  z-index: 10;
-  padding: 8em 1em 0;
-  background-size: cover;
-  background-position: 50% 50%;
-  transition: left 0s .75s;
-}
-
-[id^="slide"]:checked + .slide {
-  left: 0;
-  z-index: 100;
-  transition: left .65s ease-out;
-}
-
-.slide-1 {
-  background-image: url("https://i.imgur.com/eYgDsmg.png");
-  border-radius: 2rem;
-  height: 700px;
-  width: 100%;
-}
-.slide-2 {
-  background-image: url("https://i.imgur.com/AKolYpc.png");
-  border-radius: 2rem;
-  height: 700px;
-  width: 100%;
-}
-.slide-3 {
-  background-image: url("https://i.imgur.com/La8JOW6.png");
-  border-radius: 2rem;
-  height: 700px;
-  width: 100%;
-}
 /*-------------------------------------------------------------*/
 
 .intro .img-button{
@@ -664,10 +608,6 @@ ul.errorlist{
 .intro .img-button .btn:hover {
   background-color: black;
 }
-
-
-
-
 /* --------------------------992px--------------------------------- */
 @media (min-width: 992px) {
   #mainNav .container .brand{
