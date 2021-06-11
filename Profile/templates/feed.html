@@ -6,10 +6,12 @@
    <!-- Heading -->
    <section class="page-section clearfix">
     <div class="container">
-      <div class="intro">
-        
+      <div class="intro">  
+        <div class="img-button">
         <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'img/aldo3.png' %}" alt="">
-        
+        <button class="btn" style="vertical-align:middle"><a href="mailto:aldo.matus@outlook.com" ><span style='font-size:20px;'>Email me >> </span></a></button>   
+       </div>
+
         <div class="intro-text left-0 text-center bg-faded p-5 rounded">
 
           <h2 class="section-heading mb-4" >
@@ -123,34 +125,34 @@
     <h2 align="center">Contact me <span style='font-size:50px;'>&#128044;</span> </h2>
 
       <div class="social-icons">
-          <!-- Django -->
+          <!-- Facebook -->
           <div class="icon-1">
             <a href="https://www.facebook.com/aldo.matusmartinez" >
               <img src="https://img.icons8.com/fluent/240/000000/facebook-new.png"/>
             </a>
           </div>
-          <!-- Flask -->
+          <!-- Instagram -->
           <div class="icon-2">
-            <a href="https://flask.palletsprojects.com/" target="_blank"> 
+            <a href="https://www.instagram.com/aldomatus1/" target="_blank"> 
               <img src="https://img.icons8.com/fluent/240/000000/instagram-new.png"/>
             </a>
           </div> 
-          <!-- HTML5 -->
-          <div class="icon-3">
-            <a href="https://www.w3.org/html/" target="_blank"> 
-              <img src="https://img.icons8.com/fluent/240/000000/twitter.png"/> 
-            </a>
-          </div> 
-          <!-- css3 -->
-          <div class="icon-4">  
-            <a href="https://www.w3schools.com/css/" target="_blank"> 
+           <!-- Linkedin -->
+           <div class="icon-4">  
+            <a href="https://www.linkedin.com/in/aldomatus/" target="_blank"> 
               <img src="https://img.icons8.com/fluent/144/000000/linkedin.png"/> 
             </a>
           </div> 
           <!-- git -->
           <div class="icon-5">
-            <a href="https://git-scm.com/" target="_blank"> 
+            <a href="https://github.com/aldomatus/" target="_blank"> 
               <img src="https://img.icons8.com/fluent/144/000000/github.png"/>
+            </a>
+          </div> 
+          <!-- Twitter -->
+          <div class="icon-3">
+            <a href="https://twitter.com/Aldo33881899" target="_blank"> 
+              <img src="https://img.icons8.com/fluent/240/000000/twitter.png"/> 
             </a>
           </div> 
       </div>
@@ -193,24 +195,52 @@
           <button class="button" style="vertical-align:middle"><span>Read more...</span></button>
       </div>
     </section>
-
-  
-    <!-- Message -->
-    <section class="page-section cta">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-9 mx-auto">
-            <div class="cta-inner text-center rounded">
-              <h2 class="section-heading mb-4">
-                <span class="section-heading-upper">Compromiso total</span>
-                <span class="section-heading-lower">Garantizado</span>
-              </h2>
-              <p class="mb-0">Con más de 75 años de experiencia a nuestras espaldas, desde Gestión de Pedidos tenemos los conocimientos y herramientas necesarios para llevar cualquier objeto a la puerta de su casa con puntualidad y profesionalidad.</p>
+    
+        <div class="project-4">
+          <h1>Social Media <span style='font-size:50px;'>❤️</span></h1>
+          
+          <div class="slider-container">
+            <div class="menu">
+              <label for="slide-dot-1"></label>
+              <label for="slide-dot-2"></label>
+              <label for="slide-dot-3"></label>
             </div>
+            
+            <input id="slide-dot-1" type="radio" name="slides" checked>
+              <div class="slide slide-1"></div>
+            
+            <input id="slide-dot-2" type="radio" name="slides">
+              <div class="slide slide-2"></div>
+            
+            <input id="slide-dot-3" type="radio" name="slides">
+              <div class="slide slide-3"></div>
           </div>
+          <h2>Django's features used<span style='font-size:50px;'>🛠️</span></h2>
+          <div class="list">
+              <ul>
+                <li>Django's Class-based views</li>
+                <li>Djang’s ORM</li>
+                <li>Django's validations</li>   
+                <li>Django's pagination</li>             
+                <li>Django's forms</li>
+                <li>Django's administrator</li> 
+              </ul>
+          </div>
+          <p><span style='font-size:50px;'>📷</span> This project pretends to be the instagram social network.
+            Features:
+            </p>
+          <div class="list">
+            <ul>
+              <li>Signup</li>
+              <li>Login</li>
+              <li>Logout</li>                
+              <li>Upload posts </li>
+              <li>Profile edit </li> 
+            </ul>
         </div>
-      </div>
-    </section>
+
+
+        </div>
 
 
     {% endblock %}
